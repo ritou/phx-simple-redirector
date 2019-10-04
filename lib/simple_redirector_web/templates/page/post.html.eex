@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <h2>Simple Redirector POST Response</h2>
+  <%= for {key, val} <- @params do %>
+  <p><%= key %> : <%= val %></p>
+  <% end %>
+  <a href="/">back</a>
+</div>

@@ -1,0 +1,8 @@
+<form name="redirector" action="<%= @url %>" method="POST">
+<%= for {key, val} <- @data_list do %>
+<input type=hidden name="<%= key %>" value="<%= val %>">
+<% end %>
+</form>
+<script language=Javascript>
+document.redirector.submit();
+</script>

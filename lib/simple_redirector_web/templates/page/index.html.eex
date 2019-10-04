@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h2>Simple Redirector</h2>
+  <%= form_for @conn, page_path(@conn, :send), [], fn f -> %>
+  <label>
+    URL to POST: <%= text_input f, :url %>
+  </label>
+  <label>
+    Data to POST: <%= text_input f, :data %>
+  </label>
+  <%= submit "Submit" %>
+  <% end %>
+</div>
